@@ -28,11 +28,3 @@ variable "default_tags" {
   type    = "map"
   default = {}
 }
-
-variable "sql_admin" {
-  type = "string"
-}
-
-variable "sql_password" {
-  type = "string"
-}
