@@ -13,12 +13,17 @@ I will in this document not go into detail what each command does, please checko
 - [Terraform Docs](https://www.terraform.io/docs/index.html)
 - [Terraform Azure Provider](https://www.terraform.io/docs/providers/azurerm/index.html)
 
-# Prerequisits
+## Prerequisits
 To run this demo you need to have the following software installed:
 - [azure cli](https://aka.ms/azcli)
 - [Terraform](https://www.terraform.io/)
 
 I would recommend installing it using [Chocolatey](https://chocolatey.org/).
+
+## Preparation
+
+* Edit the file "myVars.tfvars" and replace the "REPLACE_ME" text with something more suiting.
+* Read through the files and make sure you understand them, nothing attracts the demo devil more than a clueless presenter.
 
 # The Demo 
 * Check [Azure portal](https://portal.azure.com) to see what resources you have in azure.

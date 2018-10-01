@@ -1,12 +1,9 @@
-resource_group_name = "nweb"
-
+resource_group_name = "REPLACE_ME"
 
 location = "westeurope"
 
+prefix = "REPLACE_ME"
 
-prefix = "ng"
-
-
-app_service_name = "nweb"
+app_service_name = "REPLACE_ME"
 
 
