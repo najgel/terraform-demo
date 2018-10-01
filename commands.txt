@@ -1,0 +1,60 @@
+﻿
+# Stuff that should be done before TFDemo
+terraform workspace new dev
+terraform workspace new test
+terraform workspace select dev
+
+
+#Do before presentation
+set prompt=TFDemo:
+az login
+
+Describe what will happen:
+
+# List workspaces
+terraform workspace list
+
+# initialize terraform
+terraform init
+
+# Validate the configuration
+terraform validate -var-file="variables.tfvars"
+
+#Plan for the creation of the resources in dev, gives us an idea about what will be created
+terraform plan -var-file="variables.tfvars" -out dev.tfplan
+
+# Show The plan, compare with the slide
+
+# Apply the plan to dev
+terraform apply dev.tfplan
+
+# Apply the plan to dev again, nothing happens, show and talk about the state
+terraform apply dev.tfplan
+
+
+# Switch to test workspace
+terraform workspace select test
+
+#Plan for the creation of the resources in dev, gives us an idea about what will be created
+terraform plan -var-file="variables.tfvars" -out test.tfplan
+
+# Apply the plan to dev
+terraform apply test.tfplan
+
+#Show Azure, now we got two rsgs, apps and sql servers
+
+# Destroy the resources
+terraform destroy -var-file="variables.tfvars" -force
+
+#switch to workspace test
+terraform workspace select dev
+
+#destroy workspace test
+terraform workspace delete test
+
+# destroy dev
+terraform destroy -var-file="variables.tfvars" -force
+
+
+IDEAS:
+remove a resource, create it again by running plan, apply
