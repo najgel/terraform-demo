@@ -20,6 +20,8 @@ To run this demo you need to have the following software installed:
 
 I would recommend installing it using [Chocolatey](https://chocolatey.org/).
 
+You will also need a azure subscription.
+
 ## Preparation
 
 * Edit the file "myVars.tfvars" and replace the "REPLACE_ME" text with something more suiting.
