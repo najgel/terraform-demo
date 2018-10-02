@@ -59,6 +59,15 @@ Show the files:
 Note that the information these files could have been in one, terraform searches through all .tf files in a directory, we just separate this to make it more readable. See the terraform documentation for more information.
 
 
+## initialize terraform
+
+[init](https://www.terraform.io/docs/commands/init.html)
+
+The terraform init command is used to initialize a working directory containing Terraform configuration files.
+```
+terraform init
+```
+
 ## Create workspaces
 
 [workspace](https://www.terraform.io/docs/commands/workspace/index.html)
@@ -78,16 +87,6 @@ terraform workspace select dev
 ```
 
 Check terraform state directories under ``` .\terraform.tfstate.d\ ```
-
-
-## initialize terraform
-
-[init](https://www.terraform.io/docs/commands/init.html)
-
-The terraform init command is used to initialize a working directory containing Terraform configuration files.
-```
-terraform init
-```
 
 ## Validate the configuration
 [validate](https://www.terraform.io/docs/commands/validate.html
