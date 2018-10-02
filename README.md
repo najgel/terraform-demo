@@ -146,6 +146,7 @@ Just like that we have now cloned our configuration into another workspace.
 
 
 ### Remove the resources in test
+
 When we are done in test, lets remove the resources we created.
 
 ```ruby
@@ -155,7 +156,7 @@ terraform destroy -var-file="myvars.tfvars" -force
 * Check [Azure portal](https://portal.azure.com) to see that they are gone
 
 ## Switch to workspace dev
-
+[destroy](https://www.terraform.io/docs/commands/destroy.html)
 ```ruby
 terraform workspace select dev
 ```
